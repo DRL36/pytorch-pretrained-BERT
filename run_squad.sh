@@ -3,7 +3,7 @@
 SQUAD_PYTORCH_DIR=$HOME'/pytorch-pretrained-BERT'
 echo $SQUAD_DIR
 python examples/run_squad.py \
-  --bert_model bert-base-cased \
+  --bert_model bert-base-uncased \
   --do_train \
   --train_file $SQUAD_PYTORCH_DIR/examples/train-v2.0.json \
   --do_predict \
@@ -14,5 +14,5 @@ python examples/run_squad.py \
   --num_train_epochs 2.0 \
   --max_seq_length 384 \
   --doc_stride 128 \
-  --output_dir outputs/base_case/ \
+  --output_dir outputs/base_uncase/ \
   --version_2_with_negative
